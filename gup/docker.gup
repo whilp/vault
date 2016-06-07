@@ -1,0 +1,7 @@
+#!/bin/sh
+
+set -eux
+
+gup --always
+gup -u Dockerfile
+sudo docker build -t whilp/vault .

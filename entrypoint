@@ -1,0 +1,10 @@
+#!/bin/sh
+
+set -eux
+
+cmd="$1"
+
+case "${cmd}" in
+    "") exec /usr/sbin/vault;;
+    *) exec "$@";;
+esac
